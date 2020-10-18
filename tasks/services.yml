@@ -1,0 +1,12 @@
+---
+- name: Starting the httpd service
+  service:
+    name: "{{ http_svc }}"
+    state: started
+    enabled: true
+
+- name: Starting the firewalld service
+  service:
+    name: "{{ firewall_svc }}"
+    state: started
+    enabled: true

@@ -1,0 +1,7 @@
+---
+- name: setting up the firewall rule
+  firewalld:
+    service: "{{ rule }}"
+    state: enabled
+    permanent: true
+    immediate: true

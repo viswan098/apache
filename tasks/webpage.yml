@@ -1,0 +1,6 @@
+---
+- name: copying index file to the web server
+  template:
+    src: "{{ template }}"
+    dest: "{{ webroot }}"
+  notify: restart httpd  

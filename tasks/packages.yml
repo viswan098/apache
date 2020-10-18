@@ -1,0 +1,7 @@
+---
+- name: Installing packages
+  yum:
+    name: 
+      - "{{ http_pkg }}"
+      - "{{ firewall_pkg }}"
+    state: present  

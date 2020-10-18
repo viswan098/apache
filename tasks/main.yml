@@ -1,0 +1,6 @@
+---
+# tasks file for apache
+- import_tasks: packages.yml
+- import_tasks: services.yml
+- import_tasks: firewall.yml
+- import_tasks: webpage.yml
